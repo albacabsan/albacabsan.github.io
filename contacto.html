@@ -1,0 +1,82 @@
+<!DOCTYPE html lang = "es">
+
+<head>
+    <link rel="icon" type="image/vnd.icon" href="css/favicon.ico">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+    <title>Visita Málaga </title>
+</head>
+<br>
+
+<header>
+    <h2>Visita Málaga</h2>
+</header>
+
+<nav>
+    <ul>
+        <li><img id="icon1" class="iconos" src="html/enlace1.png">
+            <p><a href="index.html">Inicio </a></p>
+        </li>
+        <li><img id="icon2" class="iconos" src="html/enlace2.png">
+            <p><a href="monumentos.html">Monumentos </a></p>
+        </li>
+        <li><img id="icon3" class="iconos" src="html/enlace3.png">
+            <p><a href="museos.html">Museos </a></p>
+        </li>
+        <li><img id="icon5" class="iconos" src="html/enlace5.png">
+            <p><a href="playas.html">Playas</a></p>
+        </li>
+        <li><img id="icon6" class="iconos" src="html/enlace6.png">
+            <p><a href="contacto.html">Contacto</a></p>
+        </li>
+    </ul>
+</nav>
+
+<form action="enviar_contacto" post>
+
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        Nombre:
+        <input type="text" name="nombre" size="38" title="Escriba su nombre correctamente"
+        span class="rojo" autofocus placeholder="Su nombre" required/><br>
+
+        Correo electrónico:
+        <input type="email" name="mail" size="28" placeholder="nombre@servidor.com" title="Escriba su correo electrónico correctamente" required/>
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Más información</legend>
+
+        Escribe un breve mensaje:<br>
+        <textarea name="mensaje"></textarea>
+        <p>
+
+            ¿Sobre qué necesitas más información?<br>
+            <input type="checkbox" name="opciones" value="monumentos" />
+            Monumentos
+
+            <input type="checkbox" name="opciones" value="museos" />
+            Museos
+
+            <input type="checkbox" name="opciones" value="restaurantes" />
+            Restaurantes
+
+            <input type="checkbox" name="opciones" value="playas" />
+            Playas
+        <p>
+    </fieldset>
+
+    <input id="boton_enviar" type="submit" value="Enviar">
+
+</form>
+<br>
+
+<h5>
+    <footer>
+        Alba Cabello © 2023 Málaga, España
+    </footer>
+</h5>
+</body>
+
+</html>
